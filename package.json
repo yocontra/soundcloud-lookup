@@ -1,7 +1,7 @@
 {
   "name": "soundcloud-lookup",
   "description": "Simply look up info about a URL on soundcloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://github.com/wearefractal/soundcloud-lookup",
   "repository": "git://github.com/wearefractal/soundcloud-lookup.git",
   "author": "Fractal contact@wearefractal.com (http://wearefractal.com)",
