@@ -1,0 +1,39 @@
+{
+  "name": "soundcloud-lookup",
+  "description": "Simply look up info about a URL on soundcloud",
+  "version": "0.0.1",
+  "homepage": "http://github.com/wearefractal/soundcloud-lookup",
+  "repository": "git://github.com/wearefractal/soundcloud-lookup.git",
+  "author": "Fractal contact@wearefractal.com (http://wearefractal.com)",
+  "dependencies": {
+    "browser-jsonp": "^1.0.7",
+    "superagent": "^0.20.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.6.1",
+    "istanbul": "^0.3.2",
+    "jshint": "^2.4.1",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "^0.0.1",
+    "mochify": "^1.7.0",
+    "rimraf": "^2.2.5",
+    "should": "^4.0.0"
+  },
+  "main": "./index.js",
+  "browser": "./browser.js",
+  "scripts": {
+    "lint": "jshint index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
+    "test": "npm run-script lint && mocha --reporter spec && mochify --reporter spec",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/soundcloud-lookup/raw/master/LICENSE"
+    }
+  ]
+}
